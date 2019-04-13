@@ -1,0 +1,35 @@
+{
+   "scope": "source.php - variable.other.php",
+
+   "completions":
+   [
+      { "trigger": "rget\tRoute::get", "contents": "Route::get('','')->name();" },
+      { "trigger": "rpost\tRoute::post", "contents": "Route::post('','');" },
+      { "trigger": "rv\treturn view()", "contents": "return view()->with();" },
+      { "trigger": "sg\tSession::get()", "contents": "Session::get('$0');" },
+      { "trigger": "seh\tSession::has()", "contents": "Session::has('$0');" },
+      { "trigger": "sput\tSession::put()", "contents": "Session::put('',\\$${1:variable});" },
+      { "trigger": "authattempt\tCreate Complete Auth Attempt", "contents": "if(Auth::attempt(['email'=>\\$request->email,'password'=>\\$request->password]))\n{\n  ${1:#code...} \n}" },
+      { "trigger": "logout\tCreate a Complete Logout Function", "contents": "public function logout() \n{\n Auth::logout(); \n}" },
+      { "trigger": "lmail\tMail::to", "contents": "Mail::to('$0')->send(new MailClass());" },
+      { "trigger": "mcreate\tModel::create([]);", "contents": "Model::create([$0]);" },
+      { "trigger": "mselect\tModel::all();", "contents": "\\$data = Model::all('$0');" },
+      { "trigger": "mupdate\tModel::update", "contents": "Model::where()->update([$0]);" },
+      { "trigger": "mdelete\tModel::delete", "contents": "Model::findOrFail($id)->delete();" },
+      { "trigger": "dbselect\tDB select Query", "contents": "DB::table('$0')->select()->get();" },
+      { "trigger": "dbinsert\tDB insert Query", "contents": "DB::table('$0')->insert([]);" },
+      { "trigger": "dbupdate\tDB update Query", "contents": "DB::table('$0')->where()->update([]);" },
+      { "trigger": "dbdelete\tDB Delete Query", "contents": "DB::table('$0')->findOrFail($id)->delete();" },
+      { "trigger": "index\tCreate Index Function", "contents": "public function index()\n{\n  ${1:#code...}\n}" },
+      { "trigger": "create\tMake Create Function", "contents": "public function create()\n{\n  ${1:#code...}\n}" },
+      { "trigger": "store\tCreate Store Function", "contents": "public function store(Request \\$request)\n{\n  ${1:#code...}\n}" },
+      { "trigger": "update\tCreate Update Function", "contents": "public function update(Request \\$request,\\$id)\n{\n  ${1:#code...}\n}" },
+      { "trigger": "store\tCreate Store Function", "contents": "public function store(Request \\$request)\n{\n  ${1:#code...}\n}" },
+      { "trigger": "show\tCreate Show Function", "contents": "public function show(\\$id)\n{\n  ${1:#code...}\n}" },
+      { "trigger": "edit\tCreate Edit Function", "contents": "public function edit(\\$id)\n{\n  ${1:#code...}\n}" },
+      { "trigger": "destroy\tCreate Destroy Function", "contents": "public function destroy(\\$id)\n{\n  ${1:#code...}\n}" },
+      { "trigger": "pt\tRewrite $table", "contents": "protected \\$table = '$0';" },
+      { "trigger": "pfill\tSession::get()", "contents": "protected \\$fillable = ['$0'];" },
+      { "trigger": "pall\tcreate table & fillable also ", "contents": "protected \\$table = '';\nprotected \\$fillable = [];" }
+   ]
+}
